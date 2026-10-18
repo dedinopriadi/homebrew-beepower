@@ -1,0 +1,32 @@
+name: Installation or formula issue
+description: Report a problem installing or running Beepower from this tap
+labels: []
+body:
+  - type: input
+    id: mac-model
+    attributes:
+      label: Mac model
+      placeholder: MacBook Pro with Apple Silicon
+    validations:
+      required: true
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS version
+      placeholder: macOS version and build, if known
+    validations:
+      required: true
+  - type: input
+    id: homebrew-version
+    attributes:
+      label: Homebrew version
+      description: Get this with `brew --version`.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include the command you ran and the relevant error output. Remove serial numbers and other device identifiers.
+    validations:
+      required: true
